@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ecd109f60f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="resources/logo.png" alt="" class="logo">
+                   <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                   </ul>
+                   <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Himmat</span><br>Neupane from Nepal</h1>
+                <span class="text first-text">I'm a</span>
+                <span class="text sec-text">Web Developer</span>
+                
+            </div>
+            <div  class="cv-btn">Hire Me</div>
+        </div>
+    </div>
+
+    <!-- ---------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="resources/main.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                   <p>I am a skilled and versatile professional with expertise in frontend website and android app development. My technical prowess extends beyond these areas,
+                    encompassing a diverse se of skills and knowledge. With fondation in information technology, I bring a comprehensive understanding of programming languages, software development methodologies, and emerging technologies.
+                   As a developer, I am dedicated to creating innovative and user-friendly solutions, levering my academic background and practical experience to contribute effectively to the dynamic field of techmology.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                       
+<p>Web Development </p>
+<div class="container">
+  <div class="skills html"></div>
+</div>
+
+<p>Android App Development</p>
+<div class="container">
+  <div class="skills css"></div>
+</div>
+
+<p>Graphic Design</p>
+<div class="container">
+  <div class="skills js"></div>
+</div>
+
+<p>Communication</p>
+<div class="container">
+  <div class="skills php"></div>
+</div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                      
+  <div class="experience-item">
+    <div class="exp-content">
+      <div class="circle">
+          <div class="icon"><i class="fa-solid fa-code"></i></div>
+          <div class="text">
+              <h3>2023-Current</h3>
+              <p>Hmm. Web Industry <br>Kaski Pokhara <br>55506</p>
+          </div>
+      </div>
+      <div class="circle">
+          <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="text">
+              <h3>2021-2023</h3>
+              <p>Mount Everest Edu. Foundation <br>Kaski Pokhara <br>23307</p>
+          </div>
+      </div>
+      <div class="line"></div>
+      </div>
+      <div class="exp-content">
+        <div class="circle">
+            <div class="icon"><i class="fa-solid fa-shield"></i></div>
+            <div class="text">
+                <h3>2020-2021</h3>
+                <p>Cyber House Ltd., <br>Butwal, Rupendhai <br>328001</p>
+            </div>
+        </div>
+        <div class="circle">
+            <div class="icon"><i class="fa-solid fa-laptop-file"></i></div>
+            <div class="text">
+                <h3>2018-2020</h3>
+                <p>Tech Training Center <br>Rupendhai, Nepal</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        
+      
+        
+             
+           
+        </div>
+      </div>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Software Engineering -Bachlor </li>
+                            <li><span>2020-2022/23</span><br>NEB -IT stream</li>
+                            <li><span>2019/20</span><br>School Level Education</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- -------------services----------- -->
+<div id="services" class="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, mollitia facilis! Perferendis molestiae minima nobis quidem quasi itaque iste aut saepe nulla veritatis ratione provident sit sequi, natus ab ut.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, mollitia facilis! Perferendis molestiae minima nobis quidem quasi itaque iste aut saepe nulla veritatis ratione provident sit sequi, natus ab ut.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, mollitia facilis! Perferendis molestiae minima nobis quidem quasi itaque iste aut saepe nulla veritatis ratione provident sit sequi, natus ab ut.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- -----------portfolio-------------- -->
+<div id="portfolio" class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="resources/work.jpg" alt="work">
+                <div class="layer">
+                    <h3>Social Media APP</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio totam repellendus vero aspernatur perferendis, amet sequi voluptatibus voluptates quisquam neque laborum magnam inventore eius mollitia asperiores accusantium ducimus vel.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work.jpg" alt="work">
+                <div class="layer">
+                    <h3>Online Shopping APP</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio totam repellendus vero aspernatur perferendis, amet sequi voluptatibus voluptates quisquam neque laborum magnam inventore eius mollitia asperiores accusantium ducimus vel.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="resources/work.jpg" alt="work">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita quod molestias quam. Ex eligendi, error at a consequuntur fugiat velit facere id, unde eius officia in quasi explicabo commodi!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="btn" href="#">See More</a>
+     </div>
+</div>
+
+
+<!-- -------------contacts----------- -->
+<section class="contact" id="contact">
+    <div class="content">
+        <h1 class="sub-title">Contact Me</h1>
+        <p>Feel free to reach out ! Whether you have questions, collaborations in mind, <br> or just want to say hello, I'm here. Drop me a line, and let's connect.</p>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>4671 Sugar Camp Road, <br>Owatonna, Minnesota, <br>555060</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>+977 987-654321</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>contact@gmail.com</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="icon"><i class="fa-brands fa-youtube"></i></div>
+                <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+               
+            </div>
+            <div class="box">
+                <div class="cv-btn">Download CV</div>
+                 
+               
+            </div>
+                     
+        </div>
+        <div class="contactForm">
+            <form  name="submit-to-google-sheet">
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input id="name" type="name" name="Name" required>
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input id="email" type="email" name="Email" required>
+                    <span>Email Address</span>
+                </div>
+                <div class="inputBox">
+                   <textarea name="Message" id="message"  required></textarea>
+                    <span>Your Message...</span>
+                </div>
+                <div class="inputBox">
+                    <input class="submit" type="submit" name="" value="Send" required>
+                    
+                </div>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <p>Copyright NPH. Made by <i class="fa-solid fa-heart"></i> HIMMAT NEUPANE.</p>
+</div>
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+    </script>
+    <script>
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+
+    </script>
+  
+       
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz_gntt4OZ1n5aVSn0Fjy_0zQDqmoHkhmUVjTqdIFXFA2LUv1DraEhmYaF7gZJ4haAn/exec'
+  const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message Sent."
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script>
+    const text = document.querySelector(".sec-text");
+
+    const textLoad = () => {
+        setTimeout(() => {
+            text.textContent ="Freelancer"
+        },0 );
+        setTimeout(() => {
+            text.textContent ="Web Developer"
+        },4000);
+        setTimeout(() => {
+            text.textContent ="Android App Developer"
+        },8000);
+    }
+
+    textLoad();
+    setInterval(textLoad, 12000);
+</script>
+   
+</body>
+</html>
+
+<!-- https://script.google.com/macros/s/AKfycbz_gntt4OZ1n5aVSn0Fjy_0zQDqmoHkhmUVjTqdIFXFA2LUv1DraEhmYaF7gZJ4haAn/exec -->
