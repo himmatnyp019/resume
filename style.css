@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: o;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+ 
+
+    
+}
+:root{
+    --main-color:#2756d8;
+    --white-color:#ffffff;
+    --shadow-color:#rgba(0,0,0,.2rem);
+    
+  }
+*::selection{
+    color: black;
+    background-color: white;
+  }
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(resources/profile.jpg);
+    background-size: cover;
+    background-position: center;
+    /* background-position: right bottom; */
+    background-attachment: scroll;
+}
+.container{
+    padding: 10px 10%;
+
+
+}
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    width: 140px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    overflow: hidden;
+
+}
+.header-text h1{
+    font-size: 60px;
+    line-height: 52px;
+    /* margin-top: 20%; */
+}
+.header-text h1 span{
+    color: var(--main-color);
+
+}
+.header-text .text{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    color: var(--main-color);
+    
+}
+.header-text .text.first-text{
+    color: #fff;
+
+
+}
+.text.sec-text::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #080808;
+    border-left: 8px solid var(--main-color);
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%,60%{
+        left:calc(100% + 5px );
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+
+/* ------------about---------- */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+    height: 100%;
+   
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 14px;
+
+}
+.about-col-2{
+    flex-basis: 60%;
+
+}
+.about-col-2 p{
+    line-height: 16px;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+margin-right: 50px;
+font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+position: relative;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: .5s;
+
+}
+.tab-links.active-link::after{
+    width: 100%;
+    border-radius: 2px;
+}
+.tab-contents .container {
+    width: 100%;
+    height: 20px;
+    background-color: #313131;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+    overflow: hidden;
+    padding: 0;
+    
+
+  }
+  .tab-contents .container .skills {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    position: relative;
+    margin: 0;
+    background-color: var(--main-color);
+    height: 20px;
+    border-radius: 50px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .tab-contents p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    padding-left: 20px;
+    
+
+  }
+
+
+   
+    
+  
+  .tab-contents .container .html {width: 55%; }
+  .tab-contents .container .css {width: 80%; }
+  .tab-contents .container .js {width: 45%;  }
+  .tab-contents .container .php {width: 85%; }
+  
+
+
+  .tab-contents .experience-item{
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+
+
+}
+.exp-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  
+    
+    
+}
+ .circle{
+    position: relative;
+    padding: 20px 0 ;
+    display: flex;
+    background-color: transparent;
+    z-index: 1;
+}
+ 
+ .circle .icon{
+    min-width: 50px;
+    height: 50px;
+    background: white;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    transition: .5s all ease;
+
+}
+.tab-contents .exp-content .line{
+    height: 120px;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    transform: translate(23px, 65px);
+    
+
+    
+ }
+ .exp-content .circle:hover .icon
+{
+    background-color: var(--main-color);
+    color: #fff;
+    transform: translateY(-5px);
+}
+.exp-content .circle:hover  ~ .line {
+    background-color: var(--main-color);  
+    
+}
+ .exp-content .circle  .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+
+
+}
+ .exp-content .circle .text h3{
+    font-weight: 500;
+    color: var(--main-color);
+    transition: .5s all ease;
+
+}
+.exp-content .circle .text p{
+    padding: 0;
+    font-size: 16px;
+    text-align: left;
+   
+    
+}
+
+
+
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color:var(--main-color);
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ------------services------------ */
+.services{
+    padding: 80px 0;
+    height: 100%;
+    
+
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform .5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-style: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-style: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    
+
+}
+.services-list div:hover{
+    background: var(--main-color);
+transform: translateY(-10px);
+}
+
+/* -----------------portfolio------------ */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), var(--main-color));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 3px solid var(--main-color);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration:none;
+    color: #fff;
+    transition: background .5s ; 
+    
+}
+
+.btn:hover{
+    background: var(--main-color);
+}
+
+/* =--------------contact--------- */
+ 
+#contact{
+    position: relative;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    /* background: url(resources/bg.jpg); */
+    background-size: cover;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.statically.io/img/codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg?f=webp&w=720');
+    background-position: cover;
+    background-repeat: no-repeat;
+ 
+
+}
+.contact content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.contact content p {
+    
+    font-weight: 300;
+    color: #fff;
+
+}
+.contact .container{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 30px;
+ 
+}
+.contact .container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact .container .contactInfo .box{
+    position: relative;
+    padding: 20px 0 ;
+    display: flex;
+}
+.contact .container .contactInfo .social-media {
+    position: relative;
+    padding: 10px 0 ;
+    display: flex;
+}
+.contact .container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+    transition: .5s all ease;
+
+}
+.contact .container .contactInfo .social-media .icon
+{
+    min-width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    margin: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+    transition: .5s all ease;
+
+}
+
+.contact .container .contactInfo .box:hover .icon
+{
+    background-color: var(--main-color);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+
+
+
+.contact .container .contactInfo .social-media .icon:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.contact .container .contactInfo .box  .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+
+
+}
+.contact .container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+    transition: .5s all ease;
+
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+}
+.contactForm h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 26px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-25px);
+}
+
+.contactForm .inputBox .submit{
+width: 120px;
+background:var(--main-color);
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+border-radius: 10px;
+border: 3px solid transparent;
+transition: background .5s;
+}
+.contactForm .inputBox .submit:hover{
+    border: 3px solid var(--main-color);
+    background-color: transparent;
+    color: #262626;
+}
+.cv-btn{
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    margin-top: 10px;
+    padding: 8px 65px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: background .5s;
+}
+
+.cv-btn:hover{
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+}
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+   
+
+}
+.copyright i{
+    color: red;
+}
+
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+
+}
+
+
+/* ----------------CSS for small screen-------------------- */
+nav .fa-solid{
+    display: none;
+}
+@media (max-width:991px) {
+    .contact{
+        padding: 30px;
+        margin: 20px;
+        width: 100%;
+        
+      
+
+        
+    }
+    .contact .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .container .contactInfo{
+        margin-bottom: 40px;
+    }
+     .contact .container .contactInfo,
+     .contactForm{
+            width: 100%;
+        }
+}
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(resources/mobile-profile.jpg);
+        background-position: right bottom;
+
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }
+    .header-text h1{
+        
+        line-height: 32px;
+       
+    }
+    .header-text h1{
+   font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: var(--main-color);
+        position: fixed;
+        top: 0;
+        right: -200px; 
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right.5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+
+    }
+
+}
